@@ -43,7 +43,7 @@ def find_icall_add_call():
 
     string_ea = idc.BADADDR
     for s in strings:
-        if target in str(s):
+        if target == str(s):
             string_ea = int(s.ea)
             break
 
